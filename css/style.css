@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar {
+  flex-shrink: 0;
+  /* background-color: rgb(70, 177, 171); */
+}
+
+.logo {
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.sidebar-list {
+  font-size: 28px;
+  list-style: none;
+  text-align: center;
+  display: contents;
+}
+
+.sidebar-list::after {
+  display: block;
+  content: "";
+  width: 220px;
+  height: 2px;
+  margin: 60px auto;
+  background-color: grey;
+}
+
+.sidebar-list__item {
+  padding-bottom: 30px;
+}
+
+.sidebar-list__item a {
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  padding: 14px;
+  color: black;
+}
+
+.sidebar-list__item a:hover,
+.sidebar-list__item a:focus {
+  border: 2px solid grey;
+  transition: 0.7s linear;
+}
+
+.sidebar-social {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.sidebar-social__item {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* .sidebar-social__item:hover {
+     background-color: red;
+   } */
+
+.sidebar-social__item:last-child {
+  margin-right: 0;
+}
+
+.content {
+  /* display: flex; */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.bunner {
+  background-image: url(../images/bunner_learn-english-writing-grammar-online-1024x576.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100vh;
+  background-color: grey;
+}
+
+.about_us {
+  display: flex;
+}
+
+.picture {
+  width: 150px;
+}
+
+.picture-size {
+  width: 400px;
+  margin-left: 20%;
+}
+.our-info {
+  width: 50%;
+}
+
+.about-us__title,
+.contacts-title {
+  /* margin: 0 auto; */
+  display: flex;
+  justify-content: center;
+  font-size: 45px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.our-info__text {
+  font-size: 22px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.contacts-address,
+.phone-number,
+.mail {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  color: #331c1c;
+}
+
+.contacts {
+  padding-bottom: 80px;
+  background-color: rgb(231, 222, 222);
+}
+
+@media (min-width: 320px) {
+  .logo {
+    width: 70%;
+    display: flex;
+    margin: auto;
+  }
+
+  h1 {
+    margin-top: 70px;
+    margin-left: 10px;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .contacts-address,
+  .phone-number,
+  .mail {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    color: #331c1c;
+  }
+
+  .our-info__text {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .our-info {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    flex-direction: row;
+  }
+
+  .sidebar {
+    width: 300px;
+    border-right: 2px solid gray;
+  }
+
+  .content {
+    overflow: auto;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .bunner {
+    background-size: cover;
+  }
+
+  h1 {
+    padding-top: 500px;
+    /* margin-left: 40px; */
+    margin: 0 auto;
+    text-align: center;
+    font-size: 68px;
+    font-weight: bold;
+    color: black;
+  }
+
+  .bunner-btn {
+    margin: 570px auto 0;
+    padding: 20px 40px;
+  }
+}
