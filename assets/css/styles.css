@@ -191,7 +191,8 @@ img {
 }
 
 .nav__link:hover {
-  color: var(--text-color);
+  /* color: var(--text-color); */
+  color: rgb(160, 141, 141);
 }
 
 nav__toggle {
@@ -207,7 +208,8 @@ nav__toggle {
 
 /*Active menu*/
 .active {
-  color: var(--text-color);
+  /* color: var(--text-color); */
+  color: rgb(160, 141, 141);
 }
 
 /*===== HOME =====*/
